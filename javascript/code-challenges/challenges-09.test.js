@@ -9,8 +9,13 @@ using the 'reduce' method.
 E.g. [4,2,7,5,9,2] -> 9
 ------------------------------------------------------------------------------------------------ */
 const maxInArray = (arr) => {
-  arr.reduce(function(a,b,0)}
-  return arr
+  return arr.reduce((currentMax, nextNum) => {
+    if (currentMax < nextNum) {
+      return nextNum;
+    } else {
+      return currentMax;
+    }
+  });
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -20,7 +25,8 @@ Write a function named getCourseKeys that takes in the courseInfo object and ret
 
 For example: (['name', 'duration', 'topics', 'finalExam']).
 ------------------------------------------------------------------------------------------------ */
-const courseInfo = { name: 'Code 301', duration: { dayTrack: '4 weeks', eveningTrack: '8 weeks'},
+const courseInfo = {
+  name: 'Code 301', duration: { dayTrack: '4 weeks', eveningTrack: '8 weeks' },
   topics: ['SMACSS', 'APIs', 'NodeJS', 'SQL', 'jQuery', 'functional programming'],
   finalExam: true
 };
