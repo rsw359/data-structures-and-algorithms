@@ -1,5 +1,7 @@
 'use strict';
 
+const { index } = require("cheerio/lib/api/traversing");
+
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 1 - Review
 
@@ -10,11 +12,7 @@ E.g. [4,2,7,5,9,2] -> 9
 ------------------------------------------------------------------------------------------------ */
 const maxInArray = (arr) => {
   return arr.reduce((currentMax, nextNum) => {
-    if (currentMax < nextNum) {
-      return nextNum;
-    } else {
-      return currentMax;
-    }
+    return Math.max(currentMax, nextNum);
   });
 };
 
@@ -32,7 +30,7 @@ const courseInfo = {
 };
 
 const getCourseKeys = (obj) => {
-  // Solution code here...
+  return Object.keys(obj);
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -43,9 +41,8 @@ Write a function named checkValues that takes in an object and a value and retur
 
 ------------------------------------------------------------------------------------------------ */
 
-const checkValues = (obj, value) => {
-  // Solution code here...
-};
+const checkValues = (obj, value) => Object.values(obj).includes(value);
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 4
@@ -67,7 +64,11 @@ HR has asked you to change the data to make it easier to print so that it looks 
 ------------------------------------------------------------------------------------------------ */
 
 const updateNumbers = (obj) => {
-  // Solution code here...
+  const newArr = [];
+  Object.keys(obj).forEach(key => {
+    newArr.push(`${key}: ${obj[key]}`);
+  });
+  return newArr;
 };
 
 
@@ -122,8 +123,7 @@ const characters = [
 ];
 
 const getHouses = (arr) => {
-  let houses = [];
-  // Solution code here...
+  let houses = arr.map(throne => throne.house);
   return houses;
 };
 
@@ -140,8 +140,17 @@ hasChildrenValues(characters, 'Sansa') will return false
 ------------------------------------------------------------------------------------------------ */
 
 const hasChildrenValues = (arr, character) => {
-  // Solution code here...
-
+  let kid = 0;
+  arr.forEach(person => {
+    if (person.name === character){
+      Object.keys(person).forEach((key,idx)=>{
+        if (key==='children') {
+          kid = Object.values(person)[idx].length;
+        }
+      });
+    }
+  });
+  return kid ? true : false;
 };
 
 /* ------------------------------------------------------------------------------------------------
