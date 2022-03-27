@@ -53,8 +53,8 @@ return: 35
 ------------------------------------------------------------------------------------------------ */
 const totalSum = (matrix) => {
   let sum = 0;
-  for (let i = 0; i < matrix.length; i++) {
-    for (let j = 0; j < matrix[i].length; j++) {
+  for (let i in matrix) {
+    for (let j in matrix[i]) {
       sum += matrix[i][j];//ask about += in review
     }
   } return sum;
@@ -108,7 +108,13 @@ Write a function named salesData that uses forEach to iterate over the hourlySal
 ------------------------------------------------------------------------------------------------ */
 
 const salesData = (hours, data) => {
-  // Solution code here...
+  const newArray = [];
+  data.forEach((brentSpiner, time) => {
+    let currentObj = { 'sales': `${brentSpiner} cookies`, 'time': `${hours[time]}` };
+
+    newArray.push(currentObj);
+  });
+  return newArray;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -133,8 +139,10 @@ const errands = [
 ];
 
 const howManyTreats = (arr) => {
-  // Solution code here...
+  let petStore = arr[2];
+  return petStore.items[1].quantity;
 };
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 7 - Stretch Goal
