@@ -34,9 +34,22 @@ Note: You might need to use the same method more than once.
 For example, count(5, [[1, 3, 5, 7, 9], [5, 5, 5], [1, 2, 3]]) returns 4.
 ------------------------------------------------------------------------------------------------ */
 
-const count = (target, input) => {
-  // Solution code here...
+const count = (target, mdArr) => {
+  return mdArr.reduce((acc, currentVal) => {
+    const rowCount = currentVal.reduce((innerAcc, innerCurrentVal) => {
+      if (innerCurrentVal === target) {
+        return innerAcc + 1;
+      }
+      return innerAcc;
+    }, 0);
+    return acc + rowCount;
+  }, 0);
+
+
 };
+
+
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 3
@@ -65,7 +78,9 @@ For example, [ [0,2,5,4], [2,4,10], [] ] should return [ [1, 32], [1024], [] ].
 ------------------------------------------------------------------------------------------------ */
 
 const divisibleByFiveTwoToThePower = (input) => {
-  // Solution code here...
+  return input.map(row => {
+    return row.filter(cell => typeof cell === 'number' && cell % 5 === 0).map(cell => Math.pow(2, cell));
+  });
 };
 
 /* ------------------------------------------------------------------------------------------------
