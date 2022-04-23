@@ -3,23 +3,26 @@ class LinkedList:
     Put docstring here
     """
 
+    # initialize the class
     def __init__(self):
         self.head = None
 
     def __str__(self):
-        # Take in a response and return a string of the current nodes while traversing
-        response = ""
+        # Take in a response and return a string of the current nodes while traversing the list
+        input_response = ""
         current = self.head
         while current:
-            response += f"{{ {current.value} }} -> "
+            input_response += f"{{ {current.value} }} -> "
             current = current.next
-        return response + "NULL"
+        return input_response + "NULL"
 
+    # create new nodes and reassign the head
     def insert(self, value):
         old_head = self.head
         self.head = Node(value, self.head)
         self.head.next = old_head
 
+    # check to see if the value exists
     def includes(self, value):
         # self.value = value
         current = self.head
