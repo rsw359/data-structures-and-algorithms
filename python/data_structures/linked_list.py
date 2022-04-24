@@ -30,9 +30,7 @@ class LinkedList:
         while current:
             if current.value == value:
                 return True
-
             current = current.next
-
         return False
 
 
