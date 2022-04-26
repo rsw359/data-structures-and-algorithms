@@ -37,3 +37,16 @@ The approach taken here is to find the center of the array, then compare the inp
 
 ### Time Complexity
 The Time Complexity for this algorithm  only grows one step when the amount of data elements doubles, making it: O(Log N)
+
+### Linked List Insertion
+
+![Code Challenge Whiteboard](docs/array-binary-search/array-binary-search.png)
+
+The challenge here is create three methods that modify a linked list. One to append the list, one to insert a node before one containing a specified value, and one to insert after a specified node.
+
+## Approach & Efficiency
+
+The approach taken here is to find node with the value we want, swap places between the next node and the specified node. The approach for the append method is to the end of the list, then append a new node to the end.
+
+### Time Complexity
+The Time Complexity for this algorithm grows along with the amount of data elements making it: O(N)
