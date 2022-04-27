@@ -7,7 +7,6 @@ def test_exists():
     assert zip_lists
 
 
-@pytest.mark.skip("TODO")
 def test_even_length():
     list_a = LinkedList()
     for value in reversed([1, 2, 3]):
@@ -22,7 +21,7 @@ def test_even_length():
     for value in reversed([1, "a", 2, "b", 3, "c"]):
         expected.insert(value)
 
-    assert str(actual) == str(expected)
+    assert str(actual) == str(expected), str(actual)
 
 
 @pytest.mark.skip("TODO")

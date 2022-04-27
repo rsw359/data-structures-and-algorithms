@@ -34,11 +34,11 @@ class LinkedList:
         return False
 
     def append(self, new_value):
+        ### intantiate a new node
+        ### set the head
+
         new_node = Node(new_value)
-        # if self.head is None:
-        #     self.head = new_node
-        #     return
-        # else:
+
         saved_value = self.head
         while saved_value.next is not None:
             saved_value = saved_value.next
@@ -84,8 +84,8 @@ class LinkedList:
         current = self.head  # set the head
 
         while current:
-            current = current.next
-            l_length = l_length + 1
+            current = current.next  # traversal
+            l_length = l_length + 1  # calc the length so we can subtract k
 
         if k >= l_length:  # If k is greater than the length of ll > raise the error
             raise TargetError
@@ -95,10 +95,30 @@ class LinkedList:
 
         if l_length >= k:
             current = self.head
-            for i in range(l_length - k - 1):
+            for i in range(l_length - k - 1):  # we have to subtract on because the 0 is counted in the length
                 current = current.next
 
         return current.value
+
+
+def zip_lists(list_a, list_b):
+    # current_1 = list_a.head
+    # current_2 = list_b.head
+    # temp_1 = current_1.next
+    # temp_2 = current_2.next
+
+    # while current_1 is not None:
+    #     current_1.next = current_2
+    #     current_2.next = temp_1
+    #     temp_1.next = current_1
+    #     temp_2.next = current_2
+    #
+    #     if current_1.next is None:
+    #         current_1.next = current_2
+    #     if current_2.next is None:
+    #         current_2.next = current_1
+
+    return list_a
 
 
 class Node:

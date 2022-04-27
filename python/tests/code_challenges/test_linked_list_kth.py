@@ -44,7 +44,7 @@ def test_kth_from_end_out_of_range():
     with pytest.raises(TargetError):
         linked_list.kth_from_end(3)
 
-c
+
 def test_kth_from_end_under_range():
     linked_list = LinkedList()
     values = ["apples", "bananas", "cucumbers"]
