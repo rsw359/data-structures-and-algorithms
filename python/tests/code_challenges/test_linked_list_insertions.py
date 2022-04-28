@@ -2,7 +2,6 @@ import pytest
 from data_structures.linked_list import LinkedList, TargetError
 
 
-
 def test_append():
     linked_list = LinkedList()
 
@@ -13,7 +12,6 @@ def test_append():
     linked_list.append("cucumber")
 
     assert str(linked_list) == "{ banana } -> { apple } -> { cucumber } -> NULL"
-
 
 
 def test_insert_before():
@@ -28,7 +26,6 @@ def test_insert_before():
     assert str(linked_list) == "{ banana } -> { cucumber } -> { apple } -> NULL"
 
 
-
 def test_insert_before_first():
     linked_list = LinkedList()
 
@@ -37,7 +34,6 @@ def test_insert_before_first():
     linked_list.insert_before("apple", "cucumber")
 
     assert str(linked_list) == "{ cucumber } -> { apple } -> NULL"
-
 
 
 def test_insert_after():
@@ -52,13 +48,11 @@ def test_insert_after():
     assert str(linked_list) == "{ banana } -> { cucumber } -> { apple } -> NULL"
 
 
-
 def test_insert_before_empty():
     linked_list = LinkedList()
 
     with pytest.raises(TargetError):
         linked_list.insert_before("radish", "zucchinni")
-
 
 
 def test_insert_before_missing():
@@ -70,13 +64,11 @@ def test_insert_before_missing():
         linked_list.insert_before("radish", "zucchinni")
 
 
-
 def test_insert_after_empty():
     linked_list = LinkedList()
 
     with pytest.raises(TargetError):
         linked_list.insert_after("radish", "zucchinni")
-
 
 
 def test_insert_after_missing():
