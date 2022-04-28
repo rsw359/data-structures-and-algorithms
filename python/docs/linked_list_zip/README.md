@@ -1,4 +1,4 @@
-# Array-Insert-Shift
+# Linked List Zip
 
 The challenge here is to combine two linked lists together in a zipped fashion. The process needs to be explained to someone new to code.
 
