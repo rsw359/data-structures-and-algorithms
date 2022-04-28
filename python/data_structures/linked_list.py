@@ -33,16 +33,23 @@ class LinkedList:
             current = current.next
         return False
 
-    def append(self, new_value):
-        ### intantiate a new node
-        ### set the head
-
-        new_node = Node(new_value)
-
-        saved_value = self.head
-        while saved_value.next is not None:
-            saved_value = saved_value.next
-        saved_value.next = new_node
+    def append(self, value):
+        new_node = Node(value)
+        if self.head is None:
+            self.head = new_node
+            return
+        last = self.head
+        while last.next:
+            last = last.next
+        last.next = new_node
+    # def append(self, new_value):
+    #
+    #     new_node = Node(new_value)
+    #
+    #     saved_value = self.head
+    #     while saved_value.next is not None:
+    #         saved_value = saved_value.next
+    #     saved_value.next = new_node
 
     def insert_before(self, value, new_value):
         if self.head is None:
@@ -99,26 +106,6 @@ class LinkedList:
                 current = current.next
 
         return current.value
-
-
-def zip_lists(list_a, list_b):
-    # current_1 = list_a.head
-    # current_2 = list_b.head
-    # temp_1 = current_1.next
-    # temp_2 = current_2.next
-
-    # while current_1 is not None:
-    #     current_1.next = current_2
-    #     current_2.next = temp_1
-    #     temp_1.next = current_1
-    #     temp_2.next = current_2
-    #
-    #     if current_1.next is None:
-    #         current_1.next = current_2
-    #     if current_2.next is None:
-    #         current_2.next = current_1
-
-    return list_a
 
 
 class Node:
