@@ -38,18 +38,10 @@ class LinkedList:
         if self.head is None:
             self.head = new_node
             return
-        last = self.head
-        while last.next:
-            last = last.next
-        last.next = new_node
-    # def append(self, new_value):
-    #
-    #     new_node = Node(new_value)
-    #
-    #     saved_value = self.head
-    #     while saved_value.next is not None:
-    #         saved_value = saved_value.next
-    #     saved_value.next = new_node
+        last_node = self.head
+        while last_node.next:
+            last_node = last_node.next
+        last_node.next = new_node
 
     def insert_before(self, value, new_value):
         if self.head is None:
@@ -100,10 +92,10 @@ class LinkedList:
         if k < 0:  # If k is negative number > raise the target error
             raise TargetError
 
-        if l_length >= k:
-            current = self.head
-            for i in range(l_length - k - 1):  # we have to subtract on because the 0 is counted in the length
-                current = current.next
+        # if l_length >= k:
+        #     current = self.head
+        for i in range(l_length - k - 1):  # we have to subtract on because the 0 is counted in the length
+            current = current.next
 
         return current.value
 

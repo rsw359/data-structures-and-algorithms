@@ -24,7 +24,6 @@ def test_even_length():
     assert str(actual) == str(expected)
 
 
-
 def test_a_shorter():
     list_a = LinkedList()
     for value in reversed([1, 2]):
@@ -40,8 +39,6 @@ def test_a_shorter():
         expected.insert(value)
 
     assert str(actual) == str(expected)
-
-
 
 def test_b_shorter():
     list_a = LinkedList()

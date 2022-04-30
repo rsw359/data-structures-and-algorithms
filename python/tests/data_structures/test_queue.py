@@ -7,7 +7,6 @@ def test_exists():
     assert Queue
 
 
-@pytest.mark.skip("TODO")
 def test_enqueue():
     q = Queue()
     q.enqueue("apple")
@@ -16,7 +15,6 @@ def test_enqueue():
     assert actual == expected
 
 
-@pytest.mark.skip("TODO")
 def test_dequeue():
     q = Queue()
     q.enqueue("apple")
@@ -26,7 +24,6 @@ def test_dequeue():
     assert actual == expected
 
 
-@pytest.mark.skip("TODO")
 def test_peek():
     q = Queue()
     q.enqueue("apple")
@@ -37,14 +34,12 @@ def test_peek():
     assert actual == expected
 
 
-@pytest.mark.skip("TODO")
 def test_peek_when_empty():
     q = Queue()
     with pytest.raises(InvalidOperationError):
         q.peek()
 
 
-@pytest.mark.skip("TODO")
 def test_enqueue_one():
     q = Queue()
     q.enqueue("apples")
@@ -53,7 +48,6 @@ def test_enqueue_one():
     assert actual == expected
 
 
-@pytest.mark.skip("TODO")
 def test_enqueue_two():
     q = Queue()
     q.enqueue("apples")
@@ -63,14 +57,12 @@ def test_enqueue_two():
     assert actual == expected
 
 
-@pytest.mark.skip("TODO")
 def test_dequeue_when_empty():
     q = Queue()
     with pytest.raises(InvalidOperationError):
         q.dequeue()
 
 
-@pytest.mark.skip("TODO")
 def test_dequeue_when_full():
     q = Queue()
     q.enqueue("apples")
@@ -80,7 +72,6 @@ def test_dequeue_when_full():
     assert actual == expected
 
 
-@pytest.mark.skip("TODO")
 def test_peek_post_dequeue():
     q = Queue()
     q.enqueue("apples")
@@ -91,7 +82,6 @@ def test_peek_post_dequeue():
     assert actual == expected
 
 
-@pytest.mark.skip("TODO")
 def test_is_empty():
     q = Queue()
     actual = q.is_empty()
@@ -99,7 +89,6 @@ def test_is_empty():
     assert actual == expected
 
 
-@pytest.mark.skip("TODO")
 def test_exhausted():
     q = Queue()
     q.enqueue("apple")
