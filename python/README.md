@@ -2,17 +2,13 @@
 
 ## Language: `Python`
 
-
-
-
-
 |Code Challenge|Name|
 --|--
-|DSAA01 WhiteBoarding|[array-reverse](https://github.com/MISalz/data-structures-and-algorithms-401/tree/main/python/docs/array-reverse)
-|DSAA02 WhiteBoarding|[array-insert-shift](https://github.com/MISalz/data-structures-and-algorithms-401/tree/main/python/docs/array-insert-shift)
-|DSAA03 WhiteBoarding|[array-binary-search](https://github.com/MISalz/data-structures-and-algorithms-401/tree/main/python/docs/array-binary-search)
-|DAA04 MockInterviews|Mock Interview|
-|DAA05 Linked Lists|[Linked Lists](https://github.com/MISalz/data-structures-and-algorithms-401/blob/main/python/data_structures/linked_list.py)%7C
-|DAA06 Linked Lists insertion and WB|[LL_wB](https://github.com/MISalz/data-structures-and-algorithms-401/blob/main/python/docs/linked_list_insertions/README.md)%7C
-|DAA07 Linked Lists kth and WB|[LL_wB]()|
-|||
+|Data Structures and Algorithms WhiteBoard 01|[array-reverse](docs/array-reverse/README.md)
+|Data Structures and Algorithms WhiteBoard 02|[array-insert-shift](docs/array-reverse/README.md)
+|Data Structures and Algorithms WhiteBoard 03|[array-binary-search](docs/array-binary-search/README.md)
+|Data Structures and Algorithms WhiteBoard 04|[Linked Lists](docs/linked-list/README.md)
+|Data Structures and Algorithms WhiteBoard 05|[Linked Lists Insertions](docs/linked_list_insertions/README.md)
+|Data Structures and Algorithms WhiteBoard 06|[Linked Lists Zip](docs/linked_list_zip/README.md)
+|Data Structures and Algorithms WhiteBoard 07|[Stacks and Queues](docs/stack_and_queue/README.md)
+|Data Structures and Algorithms WhiteBoard 08|[Stacks Pseudo Queues](docs/stack_queue_pseudo/README.md)
