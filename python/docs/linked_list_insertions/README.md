@@ -15,4 +15,4 @@ The Time Complexity for this algorithm grows along with the amount of data eleme
 
 To run this code, clone the repository, install pytest, and use the tests tests_linked_list_insertions.py
 
-![Code Challenge Whiteboard](anotherWB.png)
+![Code Challenge Whiteboard](insertions.png)
