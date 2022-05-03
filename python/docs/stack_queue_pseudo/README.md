@@ -11,3 +11,6 @@ The Approach is to use two stacks to simulate a queue by moving the nodes betwee
  The Time Performance should be O(N)
 
 ![Code Challenge Whiteboard](pseudoqueue.png)
+
+[Stacks Pseudo Queues](code_challenges/stack_queue_pseudo.py)
+
