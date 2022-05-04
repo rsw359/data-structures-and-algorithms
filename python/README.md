@@ -12,3 +12,4 @@
 |Data Structures and Algorithms WhiteBoard 06|[Linked Lists Zip](docs/linked_list_zip/README.md)
 |Data Structures and Algorithms WhiteBoard 07|[Stacks and Queues](docs/stack_and_queue/README.md)
 |Data Structures and Algorithms WhiteBoard 08|[Stacks Pseudo Queues](docs/stack_queue_pseudo/README.md)
+|Data Structures and Algorithms WhiteBoard 09|[Animal Shelter](docs/stack_queue_animal_shelter/README.md)
