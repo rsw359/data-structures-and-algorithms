@@ -1,6 +1,7 @@
 from data_structures.queue import Queue
 
 
+
 class AnimalShelter:
     def __init__(self):
         self.shelter = Queue()
