@@ -38,7 +38,6 @@ def test_fails_two_parentheses_flipped():
     assert actual == expected
 
 
-
 def test_multi():
     actual = multi_bracket_validation("{}(){}")
     expected = True

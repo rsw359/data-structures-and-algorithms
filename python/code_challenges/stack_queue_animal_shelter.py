@@ -1,7 +1,6 @@
 from data_structures.queue import Queue
 
 
-
 class AnimalShelter:
     def __init__(self):
         self.shelter = Queue()
@@ -26,9 +25,9 @@ class AnimalShelter:
             elif any_animal.type == 'dog':
                 self.dog.dequeue()
                 return any_animal
-
-        if pref != 'cat' or pref != 'dog':
-            return None
+        #
+        # if pref != 'cat' or pref != 'dog': #previous no pref condition
+        #     return None
 
         elif pref == 'cat':
             cat = self.cat.dequeue()
