@@ -14,3 +14,5 @@
 |Data Structures and Algorithms WhiteBoard 08|[Stacks Pseudo Queues](docs/stack_queue_pseudo/README.md)
 |Data Structures and Algorithms WhiteBoard 09|[Animal Shelter](docs/stack_queue_animal_shelter/README.md)
 |Data Structures and Algorithms WhiteBoard 10|[Bracket Validation](docs/stack_queue_brackets/README.md)
+|Data Structures and Algorithms WhiteBoard 11|[Trees](docs/trees/README.md)
+|Data Structures and Algorithms WhiteBoard 12|[Trees](docs/tree_max/README.md)

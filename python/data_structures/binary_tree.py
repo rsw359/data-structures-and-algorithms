@@ -59,6 +59,15 @@ class BinaryTree:
 
         return ordered_vals
 
+    def find_maximum_value(self):
+        max_value = 0
+        tree_list = self.post_order()
+
+        for int in tree_list:
+            if int > max_value:
+                max_value = int
+        return max_value
+
 
 class Node:
     def __init__(self, value):
