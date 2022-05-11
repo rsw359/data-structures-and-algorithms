@@ -15,4 +15,5 @@
 |Data Structures and Algorithms WhiteBoard 09|[Animal Shelter](docs/stack_queue_animal_shelter/README.md)
 |Data Structures and Algorithms WhiteBoard 10|[Bracket Validation](docs/stack_queue_brackets/README.md)
 |Data Structures and Algorithms WhiteBoard 11|[Trees](docs/trees/README.md)
-|Data Structures and Algorithms WhiteBoard 12|[Trees](docs/tree_max/README.md)
+|Data Structures and Algorithms WhiteBoard 12|[Tree-Max](docs/tree_max/README.md)
+|Data Structures and Algorithms WhiteBoard 12|[Tree-Breadth-First](docs/tree_breadth_first/README.md)

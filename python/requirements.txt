@@ -19,3 +19,7 @@ pytest==7.0.1
 pytest-watch==4.2.0
 tomli==2.0.1
 watchdog==2.1.6
+
+requests~=2.27.1
+bs4~=0.0.1
+beautifulsoup4~=4.11.1

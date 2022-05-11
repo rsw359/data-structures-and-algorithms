@@ -1,3 +1,6 @@
+from queue import Queue
+
+
 class BinaryTree:
     """
     Put docstring here
@@ -67,7 +70,6 @@ class BinaryTree:
             if int > max_value:
                 max_value = int
         return max_value
-
 
 class Node:
     def __init__(self, value):
