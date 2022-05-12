@@ -10,6 +10,6 @@ This challenge is to write a function that can return a list comprised of the va
 
 The approach here is to create a queue that will be populated by the tree's values, then append those values into an empty list.
 
-The Big O time complexity for searching for a specific node value in a binary is O(n) where n is the number of nodes in the tree. Space is the same, except that n is the widest point of the tree
+The Big O time complexity for searching for a specific node value in a binary is O(n) where n is the number of nodes in the tree. Space is O(w), where 'w' is the widest point of the tree.
 
 ![Code Challenge Whiteboard](tree-beadth-first.PNG)
