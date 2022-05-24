@@ -16,5 +16,6 @@
 |Data Structures and Algorithms WhiteBoard 10|[Bracket Validation](docs/stack_queue_brackets/README.md)
 |Data Structures and Algorithms WhiteBoard 11|[Trees](docs/trees/README.md)
 |Data Structures and Algorithms WhiteBoard 12|[Tree-Max](docs/tree_max/README.md)
-|Data Structures and Algorithms WhiteBoard 12|[Tree-Breadth-First](docs/tree_breadth_first/README.md)
-|Data Structures and Algorithms WhiteBoard 12|[Tree-Fizz-Buzz](docs/tree_fizz_buzz/README.md)
+|Data Structures and Algorithms WhiteBoard 13|[Tree-Breadth-First](docs/tree_breadth_first/README.md)
+|Data Structures and Algorithms WhiteBoard 14|[Tree-Fizz-Buzz](docs/tree_fizz_buzz/README.md)
+|Data Structures and Algorithms WhiteBoard 15|[Insertion-Sort-Blog](sorting/insertion/Blog.md)
