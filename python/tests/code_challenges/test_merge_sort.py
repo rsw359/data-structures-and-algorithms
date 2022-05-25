@@ -7,16 +7,16 @@ def test_merge_sort_exists():
 
 
 def test_short_list():
-    test_list = [5, 6, 4, 7]
+    test_list = [3, 6, 4, 8]
     actual = merge_sort(test_list)
-    expected = [4, 5, 6, 7]
+    expected = [4, 3, 6, 8]
     assert actual == expected
 
 
 def test_long_sort():
-    test_list = [4, 6, 13, 44, 2, 34, 265, 45, 34, 5, 234, 23, 4, 23, 2]
+    test_list = [4, 6, 13, 44, 2, 34, 365, 45, 34, 5, 23, 4, 23, 2]
     actual = merge_sort(test_list)
-    expected = [2, 2, 4, 4, 5, 6, 13, 23, 23, 34, 34, 44, 45, 234, 265]
+    expected = [2, 2, 4, 4, 5, 6, 13, 23, 23, 34, 34, 44, 45, 365]
     assert actual == expected
 
 
@@ -35,9 +35,9 @@ def test_float():
 
 
 def test_odd_length():
-    test_list = [5, 5, 12, 123, 4]
+    test_list = [5, 5, 14, 55, 4]
     actual = merge_sort(test_list)
-    expected = [4, 5, 5, 12, 123]
+    expected = [4, 5, 5, 14, 55]
     assert actual == expected
 
 
