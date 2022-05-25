@@ -22,5 +22,8 @@ The tests are located at *python/tests/code_challenges/test_insertion_sort.py*
 
 To run the test enter the 'pytest' command at the root of the repository, or use *pytest -k python/tests/code_challenges/test_insertion_sort.py*
 
-[Code](python/code_challenges/insertion_sort.py)
-[Tests](python/code_challenges/insertion_sort.py)
+[Blog](Blog.md)
+
+[Code](../../python/code_challenges/insertion_sort.py)
+
+[Tests](../../python/tests/code_challenges/test_insertion_sort.py)
