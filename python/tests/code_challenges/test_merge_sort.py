@@ -9,7 +9,7 @@ def test_merge_sort_exists():
 def test_short_list():
     test_list = [3, 6, 4, 8]
     actual = merge_sort(test_list)
-    expected = [4, 3, 6, 8]
+    expected = [3, 4, 6, 8]
     assert actual == expected
 
 
