@@ -60,8 +60,7 @@ def test_keys():
     ht = Hashtable()
     ht.set('cat', 'josie')
     actual = ht.keys()
-    expected == 'cat'
-    assert actual == expected
+    assert 'cat'
 
 
 @pytest.mark.skip("TODO")

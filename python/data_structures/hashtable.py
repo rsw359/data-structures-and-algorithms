@@ -46,9 +46,13 @@ class Hashtable:
 
     def keys(self):
         all_keys = []
-        for i in range(len(self.pockets)):
-            if self.pockets is not None:
-                for j in range(len(self.pockets[i])):
-                    all_keys.append(self.pockets[i][j][0])
+        for pocket in self.pockets:
+            if pocket is not None:
+                current = pocket.head
+                while current:
+                    pair = current.value
+                    current_key = pair[0]
+                    all_keys.append(current_key)
+                    current= current.next
         return all_keys
 
