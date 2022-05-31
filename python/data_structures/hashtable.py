@@ -56,3 +56,10 @@ class Hashtable:
                     current= current.next
         return all_keys
 
+    # def contains(self, key, value):
+    #     for pocket in self.pockets:
+    #         if pocket is not None:
+
+    #     return
+
+
