@@ -9,7 +9,7 @@ def test_exists():
 @pytest.mark.skip("TODO")  # same code, but fails
 def test_create():
     ht = Hashtable()
-    actual = ht.size()
+    actual = ht.size
     expected = 1024
     assert actual == expected
 
