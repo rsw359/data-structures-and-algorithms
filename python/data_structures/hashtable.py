@@ -8,6 +8,7 @@ class Hashtable:
         self.pockets = [None] * self.size
 
     def hash(self, key):
+
         sum_chars = 0
         for char in key:
             sum_chars += ord(char)
@@ -56,10 +57,22 @@ class Hashtable:
                     current= current.next
         return all_keys
 
-    # def contains(self, key, value):
-    #     for pocket in self.pockets:
-    #         if pocket is not None:
 
-    #     return
+    def contains(self, key):
+        idx = self.hash(key)
+        pocket = self.pockets[idx]
+
+        if pocket is None:
+            return False
+        current = pocket.head
+
+        while current:
+            pair = current.value
+            current_key = pair[0]
+            if current_key == key:
+                return True
+            current= current.next
+        return False
+
 
 

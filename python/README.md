@@ -20,4 +20,5 @@
 |Data Structures and Algorithms WhiteBoard 14|[Tree-Fizz-Buzz](docs/tree_fizz_buzz/README.md)
 |Data Structures and Algorithms WhiteBoard 15|[Insertion-Sort-Blog](sorting/insertion/Blog.md)
 |Data Structures and Algorithms WhiteBoard 16|[Hashtable-Repeated-Word](docs/hashtable_repeated_word/README.md)
-|Data Structures and Algorithms WhiteBoard 16|[Hashtable-Repeated-Word](docs/hashtable/README.md)
+|Data Structures and Algorithms WhiteBoard 17|[Hashtable](docs/hashtable/README.md)
+|Data Structures and Algorithms WhiteBoard 18|[tree-intersection](docs/tree_intersection/README.md)
