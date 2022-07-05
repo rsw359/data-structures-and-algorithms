@@ -2,11 +2,13 @@
 
 ## Language: `Python`
 
+This repository is intended to be a demonstration of various code challenges, data structures, and algorithms in Python.
+
 |Code Challenge|Name|
 --|--
-|Data Structures and Algorithms WhiteBoard 01|[array-reverse](docs/array-reverse/README.md)
-|Data Structures and Algorithms WhiteBoard 02|[array-insert-shift](docs/array-reverse/README.md)
-|Data Structures and Algorithms WhiteBoard 03|[array-binary-search](docs/array-binary-search/README.md)
+|Data Structures and Algorithms WhiteBoard 01|[Array-reverse](docs/array-reverse/README.md)
+|Data Structures and Algorithms WhiteBoard 02|[Array-insert-shift](docs/array-reverse/README.md)
+|Data Structures and Algorithms WhiteBoard 03|[Array-binary-search](docs/array-binary-search/README.md)
 |Data Structures and Algorithms WhiteBoard 04|[Linked Lists](docs/linked-list/README.md)
 |Data Structures and Algorithms WhiteBoard 05|[Linked Lists Insertions](docs/linked_list_insertions/README.md)
 |Data Structures and Algorithms WhiteBoard 06|[Linked Lists Zip](docs/linked_list_zip/README.md)
